@@ -1,41 +1,62 @@
 # Autobot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/autobot`. To experiment with that code, run `bin/console` for an interactive prompt.
+Autobot provides a simple way to generate bot automatically from conversation data,
+especially [755](http://7gogo.jp).
 
-TODO: Delete this and the text above, and describe your gem
+```
+> オススメの本とかってある？
+nanamin：よく聞かれるんだけど、趣味が合うかわかんないからオススメって難しいよ＊＊＊＊＊
 
+今読んでるのはマクベス
+```
+
+## Requirements
+
+Autobot requires [MeCab](http://taku910.github.io/mecab) and
+[mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd).  
+If you use Mac OS X, you can install the former one with [Homebrew](http://brew.sh/index.html):
+
+```
+$ brew install mecab
+```
 ## Installation
 
-Add this line to your application's Gemfile:
+Put this in your Gemfile:
 
 ```ruby
-gem 'autobot'
+gem "autobot", github: "yasaichi/autobot"
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install autobot
+```
+$ bundle install
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Run setup command:
 
-## Development
+```
+$ bundle exec autobot setup
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Now you can start conversation with Autobot:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+$ bundle exec autobot start
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/autobot.
+You should follow the steps below:
 
+1. [Fork the repository](https://help.github.com/articles/fork-a-repo/)
+2. Create a feature branch: `git checkout -b add-new-feature`
+3. Commit your changes: `git commit -am 'add new feature'`
+4. Push the branch: `git push origin add-new-feature`
+4. [Send us a pull request](https://help.github.com/articles/using-pull-requests/)
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
