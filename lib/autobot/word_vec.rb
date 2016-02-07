@@ -4,7 +4,7 @@ class Autobot::WordVec
   extend Forwardable
 
   def_delegator :'@vector', :dup, :to_h
-  def_delegators :'@vector', :[], :empty?, :size
+  def_delegators :'@vector', :[], :empty?
 
   def self.from_words(words:, idf_table:)
     tf_vec = words.reduce(Hash.new(0)) do |hash, word|

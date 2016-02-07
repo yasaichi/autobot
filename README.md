@@ -1,6 +1,6 @@
 # Autobot
 
-Autobot provides a simple way to generate bot automatically from conversation data,
+Autobot provides a simple way to generate Bot automatically from conversation data,
 especially [755](http://7gogo.jp).
 
 ```

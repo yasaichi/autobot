@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["yasaichi@users.noreply.github.com"]
 
   spec.summary       = "Automatic generation of Bot from conversation data on SNS"
-  spec.description   = "Autobot provides a simple way to generate bot automatically from conversation data, especially 755."
+  spec.description   = "Autobot provides a simple way to generate Bot automatically from conversation data."
   spec.homepage      = "https://github.com/yasaichi/autobot"
   spec.license       = "MIT"
 
