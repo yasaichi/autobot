@@ -1,3 +1,5 @@
+require 'delegate'
+
 module Autobot
   module Resource
     class Collection < ::SimpleDelegator

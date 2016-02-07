@@ -1,3 +1,6 @@
+require 'faraday'
+require 'json'
+
 module Autobot
   module Resource
     module Connection
